@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: none; /* Remove background color */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set the particles background behind other content */
+    background-color: black; /* Set the background color to black */
+}
+
+#content {
+    background: none; /* Remove the background for the content */
+}
+        /* Additional CSS for the GIF */
+        #birthday-gif {
+            width: 50%;
+            height: 100%;
+            cursor: pointer;
+
+            
+            position: absolute;
+
+         
+ 
+         /*   transition: width 3s;  CSS transition for scaling over 4 seconds */
+        }
+        #birthday-gif.hidden {
+            display: none; /* Hide the GIF */
+        }
+        #greeting {
+            display: none; /* Hide the greeting initially */
+        }
+        #video {
+            display: none; /* Hide the video initially */
+        }
+
+        img{
+            height: 70px;
+            width: 70px;
+        }
+#greeting {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3); /* Transparent black background */
+}
+h1{
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(Transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    
+}
+@keyframes animate
+{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
+    {
+        color: #ffffff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+#name {
+    animation: glowing 2s ease infinite;
+}
+
+#video {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Transparent black background */
+}
+
+#videoFrame {
+    display: inline-block;
+    align-content: center;
+}
+
+@keyframes glowing {
+    0% {
+        color: #ff8c00;
+        text-shadow: 0 0 5px #ff8c00;
+    }
+    50% {
+        color: #ffdb58;
+        text-shadow: 0 0 20px #ffdb58;
+    }
+    100% {
+        color: #ff8c00;
+        text-shadow: 0 0 5px #ff8c00;
+    }
+}
